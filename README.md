@@ -1,6 +1,6 @@
 # Datatables Search
 
-```
+```html
 <x-div data-controller="/node_modules/datatables-search/dist/datatables-search">
   <div class="form-group">
     <div class="input-group">
