@@ -1,0 +1,22 @@
+{
+  "name": "datatables-search",
+  "version": "1.0.0",
+  "description": "Search component for datatables",
+  "main": "dist/datatables-search.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourlabsldn/datatables-search.git"
+  },
+  "author": "Four Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fourlabsldn/datatables-search/issues"
+  },
+  "homepage": "https://github.com/fourlabsldn/datatables-search#readme",
+  "dependencies": {
+    "x-div": "^1.0.44"
+  }
+}
