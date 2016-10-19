@@ -5,7 +5,7 @@
   <div class="form-group">
     <div class="input-group">
       <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
-      <input type="text" class="form-control" placeholder="Search..." aria-controls="datatable-id">
+      <input type="text" class="form-control" placeholder="Search&hellip;" aria-controls="datatable-id">
     </div>
   </div>
 </x-div>
