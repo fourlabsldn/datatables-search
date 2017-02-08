@@ -21,6 +21,7 @@ xController(function datatablesSearch(wrapper) {
       $datatable = jQuery(datatable).dataTable().api();
     }
 
-    $datatable.search(e.srcElement.value).draw();
+    const value = e.srcElement ? e.srcElement.value : e.target.value;
+    $datatable.search(value).draw();
   });
 });
