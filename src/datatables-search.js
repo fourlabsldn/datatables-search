@@ -21,7 +21,10 @@ xController(function datatablesSearch(wrapper) {
       $datatable = jQuery(datatable).dataTable().api();
     }
 
-    const value = e.srcElement ? e.srcElement.value : e.target.value;
+    const value = (e.srcElement ? e.srcElement.value : e.target.value)
+        .replace(/[^\x00-\xFF]/g, '') // remove non-ASCII characters
+    ;
+
     $datatable.search(value).draw();
   });
 });
