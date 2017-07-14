@@ -9,6 +9,8 @@ xController(function datatablesSearch(wrapper) {
     throw new Error('No selector for searchable datatable provided');
   }
 
+  const search = $.fn.dataTable.util.throttle(term => { $datatable.search(term).draw(); }, 1000);
+
   const datatable = document.querySelector(`#${datatableId}`);
   let $datatable;
 
@@ -25,6 +27,6 @@ xController(function datatablesSearch(wrapper) {
         .replace(/[^\x00-\xFF]/g, '') // remove non-ASCII characters
     ;
 
-    $datatable.search(value).draw();
+    search(value);
   });
 });

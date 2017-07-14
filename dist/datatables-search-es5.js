@@ -15,6 +15,10 @@ xController(function datatablesSearch(wrapper) {
     throw new Error('No selector for searchable datatable provided');
   }
 
+  var search = $.fn.dataTable.util.throttle(function (term) {
+    $datatable.search(term).draw();
+  }, 1000);
+
   var datatable = document.querySelector('#' + datatableId);
   var $datatable = void 0;
 
@@ -29,7 +33,7 @@ xController(function datatablesSearch(wrapper) {
 
     var value = (e.srcElement ? e.srcElement.value : e.target.value).replace(/[^\x00-\xFF]/g, '');
 
-    $datatable.search(value).draw();
+    search(value);
   });
 });
 
