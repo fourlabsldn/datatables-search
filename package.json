@@ -1,6 +1,6 @@
 {
   "name": "datatables-search",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Search component for datatables",
   "main": "dist/datatables-search.js",
   "scripts": {
